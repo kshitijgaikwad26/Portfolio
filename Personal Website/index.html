@@ -1,109 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kshitij Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-color: rgb(1, 1, 33);
-        color: white;
-        font-family: "Poppins", sans-serif;
-      }
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-      nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 80px;
-        background-color: rgb(72, 72, 158);
-      }
+        body {
+            background-color: rgb(1, 1, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
 
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(72, 72, 158);
+        }
 
-      nav ul li {
-        list-style: none;
-        margin: 0 23px;
-      }
-      nav ul li a{
-      text-decoration: none;
-      color: white;
-      }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
 
-      nav ul li a:hover{
-      font-size: 1.01rem;
-      color: white;
-      }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
 
-      .left {
-        font-size: 1.5rem;
-      }
+        nav ul li a {
+            text-decoration: none;
+            /* color: white; */
+            color: rgb(197, 180, 213);
+        }
 
-      .firstSection {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 80px 0;
-      }
-      .firstSection > div {
-        width: 30%;
-      }
+        nav ul li a:hover {
+            font-size: 1.01rem;
+            color: rgb(43, 172, 84);
+        }
 
-      .leftSection {
-        /* background-color: red; */
-        /* width: 35px; */
-        font-size: 2rem;
-        /* margin: 70px 0; */
-      }
-      .rightSection img {
-        width: 80%;
-      }
-      .purple {
-        color: rgb(114, 59, 163);
-      }
+        main hr {
+            border: 0;
+            background: #494958;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            /* background-color: red; */
+            /* width: 35px; */
+            font-size: 2rem;
+            /* margin: 70px 0; */
+        }
+        leftSection .button{
+            padding: 50px 0;
+
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background-color: #1e2167;
+            color: white;
+            border: 2px solid rgb(142, 74, 143);
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            /* color: rgb(59, 163, 92); */
+            color: rgb(112, 91, 203);
+
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            /* color: rgb(114, 59, 163); */
+            color: rgb(112, 91, 203);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.7rem;
+
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 70vw;
+            height: 2px;
+            margin: 60px 0;
+            display: flex;
+
+        }
+
+        .secondSection .vertical {
+            height: 80px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 23px;
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -8px;
+        }
+
+        .vertical-title {
+            width: 150px;
+            position: relative;
+            top: 75px;
+            font-size: 14px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 80px;
+            width: 150px;
+            color: gray;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            /* height: 233px; */
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 90px;
+            justify-content: space-evenly;
+
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 200px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <nav>
-        <div class="left">Kshitij Portfolio</div>
-        <div class="right">
-          <ul>  
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></a></li>
-            <li><a href="/">Service</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">Contact me</a></li>
-          </ul>
-        </div>
-      </nav>
+        <nav>
+            <div class="left">Kshitij Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></a></li>
+                    <li><a href="/">Service</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
-      <section class="firstSection">
-        <div class="leftSection">
-          Hi, My Name is <span class="purple">Kshitij</span>
-          <div>and I am a passionate</div>
-          <div>Web Developer</div>
-        </div>
-        <div class="rightSection">
-          <img src="bg.png" alt="" />
-        </div>
-      </section>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My Name is <span class="purple">Kshitij</span>
+                <div>and I am a passionate</div>
+                <!-- <div>Web Developer</div> -->
+                <span id="element"></span>
+
+                <div class="button">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="" />
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far.</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="twitter.png" alt="">
+                    <div class="vertical-title">
+
+                        Twitter Developer (2018-2020)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis rerum optio quidem
+                        sapiente fuga quia iste, doloribus delectus cupiditate voluptates soluta reiciendis, fugit
+                        voluptatibus minus ipsam voluptatem? At, labore hic.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2018-2020)
+
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis rerum optio quidem
+                        sapiente fuga quia iste, doloribus delectus cupiditate voluptates soluta reiciendis, fugit
+                        voluptatibus minus ipsam voluptatem? At, labore hic.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="instagram.png" alt="">
+                    <div class="vertical-title">
+                        Instagram Developer (2021-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis rerum optio quidem
+                        sapiente fuga quia iste, doloribus delectus cupiditate voluptates soluta reiciendis, fugit
+                        voluptatibus minus ipsam voluptatem? At, labore hic.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="linkedin.png" alt="">
+                    <div class="vertical-title">
+                        Linkedin Developer (2021-2022)
+
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis rerum optio quidem
+                        sapiente fuga quia iste, doloribus delectus cupiditate voluptates soluta reiciendis, fugit
+                        voluptatibus minus ipsam voluptatem? At, labore hic.
+                    </div>
+                </div>
+
+
+
+                <!-- <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2018-2020)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis rerum optio quidem
+                        sapiente fuga quia iste, doloribus delectus cupiditate voluptates soluta reiciendis, fugit
+                        voluptatibus minus ipsam voluptatem? At, labore hic.
+                    </div>
+                </div> -->
+
+
+                <!-- <div class="vertical">
+                    Full Stack Developer (2020-2022)
+                </div>
+                <div class="vertical"></div>
+                <div class="vertical"></div> -->
+
+            </div>
+        </section>
     </main>
-  </body>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Kshitij's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Contact</li>
+                </ul>
+
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Contact</li>
+                </ul>
+
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Contact</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyrights &#169; kshitijportfolio.com | All Rights Reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Java Developer.', 'Video Editor.'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
 </html>
